@@ -6,10 +6,26 @@
   <title>Hollow Knight: Silksong</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="https://cdn2.steamgriddb.com/icon/f0e95622d20a747e93f5403e5193b155/32/256x256.png">
-
 </head>
 
 <body>
+  <!-- Animated Background Elements -->
+  <div class="background-animation">
+    <div class="silk-thread silk-thread-1"></div>
+    <div class="silk-thread silk-thread-2"></div>
+    <div class="silk-thread silk-thread-3"></div>
+    <div class="silk-thread silk-thread-4"></div>
+    <div class="floating-particle particle-1"></div>
+    <div class="floating-particle particle-2"></div>
+    <div class="floating-particle particle-3"></div>
+    <div class="floating-particle particle-4"></div>
+    <div class="floating-particle particle-5"></div>
+    <div class="floating-particle particle-6"></div>
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+  </div>
+
   <header>
     <h1><img src="https://cdn2.steamgriddb.com/icon/f0e95622d20a747e93f5403e5193b155/32/256x256.png" alt="icon">Hollow Knight: Silksong</h1>
     <p class="tagline">A New Journey Begins in the Kingdom of Pharloom</p>
@@ -35,9 +51,33 @@
       <li>Play as Hornet, a fast and agile new protagonist.</li>
       <li>Explore the mysterious kingdom of Pharloom.</li>
       <li>Encounter over 200 unique enemies and legendary bosses.</li>
-      <li>Craft tools and use powerful “Silk Skills.”</li>
+      <li>Craft tools and use powerful "Silk Skills."</li>
       <li>Discover quests and hidden secrets throughout the world.</li>
     </ul>
+  </section>
+
+  <!-- Mini Game Section -->
+  <section class="game-section">
+    <h2>🎮 Catch the Geo! 🎮</h2>
+    <p class="game-description">Click the falling Geo coins before they disappear! Test your reflexes!</p>
+    <div class="game-stats">
+      <div class="stat">
+        <span class="stat-label">Score:</span>
+        <span id="score" class="stat-value">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Time:</span>
+        <span id="timer" class="stat-value">30</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">High Score:</span>
+        <span id="highScore" class="stat-value">0</span>
+      </div>
+    </div>
+    <div id="gameContainer" class="game-container">
+      <button id="startBtn" class="start-btn">Start Game</button>
+      <div id="gameMessage" class="game-message hidden">Time's Up!</div>
+    </div>
   </section>
 
   <section class="links">
@@ -49,5 +89,7 @@
   <footer>
     <p>&copy; 2025 Team Cherry Fan Page | Designed by Shaurya</p>
   </footer>
+
+  <script src="game.js"></script>
 </body>
 </html>
